@@ -1,0 +1,22 @@
+
+[1mFrom:[0m /home/lucas/Programmation/THP/Week03/Day04/RHP_LeScrappeurFou.llensi/lib/cher_depute.rb @ line 53 Object#perform:
+
+    [1;34m48[0m: [32mdef[0m [1;34mperform[0m
+    [1;34m49[0m:   depute_first_name = []
+    [1;34m50[0m:   depute_last_name = []
+    [1;34m51[0m:   depute_email = []
+    [1;34m52[0m:   urls_array = get_depute_urls
+ => [1;34m53[0m:   binding.pry
+    [1;34m54[0m:   urls_array.each_with_index [32mdo[0m |url, index|
+    [1;34m55[0m:     binding.pry
+    [1;34m56[0m:     depute_first_name[index] = get_depute_firstname([31m[1;31m"[0m[31mhttp://www2.assemblee-nationale.fr#{url}[0m[31m[1;31m"[0m[31m[0m)
+    [1;34m57[0m:     binding.pry
+    [1;34m58[0m:     depute_last_name[index] = get_depute_lastname([31m[1;31m"[0m[31mhttp://www2.assemblee-nationale.fr#{url}[0m[31m[1;31m"[0m[31m[0m)
+    [1;34m59[0m:     binding.pry
+    [1;34m60[0m:     depute_email[index] = get_depute_email([31m[1;31m"[0m[31mhttp://www2.assemblee-nationale.fr#{url}[0m[31m[1;31m"[0m[31m[0m)
+    [1;34m61[0m:     binding.pry
+    [1;34m62[0m:   [32mend[0m
+    [1;34m63[0m:   final_array = make_hash(depute_first_name, depute_last_name, depute_email)
+    [1;34m64[0m:   puts final_array
+    [1;34m65[0m: [32mend[0m
+
