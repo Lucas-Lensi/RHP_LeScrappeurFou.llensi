@@ -7,8 +7,10 @@ describe "get_townhall_email method" do
   end
 end
 
-describe "get_townhall_urls method" do
-  it "get the url of each townhall" do
-    expect(get_townhall_urls)
+describe "make_hash method" do
+  it "build a hash" do
+    s = ["a", "b"]
+    s2 = ["c", "d"]
+    expect(make_hash(s, s2)).to eq([{"a"=>"c"}, {"b"=>"d"}])
   end
 end

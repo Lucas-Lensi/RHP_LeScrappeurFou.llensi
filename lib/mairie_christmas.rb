@@ -30,15 +30,11 @@ end
 def make_hash (all_name, all_email)
   final_array = []
   i = 0
-#  townhall_hash = Hash.new
-#  all_name.each_with_index do |name, index|
   while i < all_name.size
     final_array[i] = {all_name[i]=>all_email[i]}
     i += 1
-#    townhall_hash[name] = all_email[index]
   end
-#  final_array.push(townhall_hash)
-puts final_array
+  puts final_array
   return final_array
 end
 

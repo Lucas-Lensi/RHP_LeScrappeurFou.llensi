@@ -20,10 +20,6 @@ def take_infos
 end
 
 def make_hash (crypto_array, value_array)
-#  result = Hash.new
-#  crypto_array.each_with_index do |crypto, index|
-#    result[crypto] = value_array[index]
-#  end
   final_array = []
   i = 0
   while i < crypto_array.size
